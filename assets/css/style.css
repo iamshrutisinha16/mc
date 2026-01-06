@@ -61,13 +61,10 @@ header {
 
 /* Logo Image - Yahan width set ki gayi hai */
 .logo img {
-    width: 60px;            /* Logo ki chauwdai (width) fix karein */
+    width: 150px;            /* Logo ki chauwdai (width) fix karein */
     height: auto;            /* Height apne aap set hogi aspect ratio ke hisaab se */
     display: block;
     object-fit: contain;
-    
-    /* Agar image JPEG hai aur background white hai toh ye line use karein 
-       taaki wo website ke header ke saath mix ho jaye */
     mix-blend-mode: multiply; 
     
     /* Visibility ke liye */
@@ -78,7 +75,7 @@ header {
 /* Mobile ke liye logo size thoda chota */
 @media (max-width: 768px) {
     .logo img {
-        width: 150px;
+        width: 120px;
     }
 }
 /* Right Tools */

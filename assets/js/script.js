@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
             track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
 
             productCards.forEach((card, i) => {
-                card.classList.remove('is-active', 'active'); // Dono classes handle kar raha hoon
+                card.classList.remove('is-active', 'active'); 
                 if (productDots[i]) productDots[i].classList.remove('active');
                 
                 if (i === currentIndex) {
@@ -97,9 +97,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // Click on Dots
         productDots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
-                clearInterval(slideInterval); // Click karne par auto-play rokein
+                clearInterval(slideInterval); 
                 updateSlider(index);
-                slideInterval = setInterval(autoPlay, 3500); // Phir se shuru karein
+                slideInterval = setInterval(autoPlay, 2000); 
             });
         });
 
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let slideInterval = setInterval(autoPlay, 3500);
 
         track.addEventListener('mouseenter', () => clearInterval(slideInterval));
-        track.addEventListener('mouseleave', () => slideInterval = setInterval(autoPlay, 3500));
+        track.addEventListener('mouseleave', () => slideInterval = setInterval(autoPlay, 2000));
     }
 
 
