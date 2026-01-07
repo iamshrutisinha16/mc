@@ -503,31 +503,25 @@ footer a:hover {
     color: #F2A93B !important;
 }
 
-/* ======================================================
-   FOOTER RESPONSIVE PART (Sare Devices Ke Liye)
-   ====================================================== */
-
-/* 1. TABLETS & SMALL LAPTOPS (1024px ke niche) */
 @media (max-width: 1024px) {
     .footer-grid {
-        grid-template-columns: 1fr 1fr; /* 3 columns se 2 columns mein change */
-        gap: 40px; /* Gap thoda kam kiya */
+        grid-template-columns: 1fr 1fr; 
+        gap: 40px; 
         padding: 0 30px;
     }
 
-    /* Pehle column (Logo) ko full width kar denge taaki balance bana rahe */
     .footer-col:nth-child(1) {
         grid-column: span 2; 
         text-align: center;
     }
 
     .footer-logo img {
-        margin-left: 0; /* Margin remove karke center kiya */
+        margin-left: 0; 
         height: 120px;
     }
 
     .socials {
-        justify-content: center; /* Icons center mein */
+        justify-content: center;
     }
 }
 
@@ -538,9 +532,9 @@ footer a:hover {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr; /* Mobile par sab ek ke niche ek (Single Column) */
+        grid-template-columns: 1fr; 
         gap: 30px;
-        text-align: center; /* Sab kuch center align */
+        text-align: center; 
     }
 
     .footer-col:nth-child(1) {
@@ -1554,89 +1548,64 @@ footer a:hover {
     border-color: #d4af37;
 }
 
-/* ================= LARGE LAPTOPS ================= */
-@media (max-width: 1200px) {
-    .space-content {
-        padding-bottom: 60px;
+/* --- Tablet Devices (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+    .space-bg {
+        clip-path: circle(35% at 50% 50%); /* Tablet par circle thoda bada */
     }
-
     .main-title {
-        font-size: clamp(2rem, 4.5vw, 3.5rem);
+        font-size: 3rem;
     }
 }
 
-/* ================= TABLETS ================= */
-@media (max-width: 992px) {
-    .space-item {
-        height: 90vh;        /* full vh se thoda kam */
-        position: relative;  /* sticky disable for stability */
-    }
-
+/* --- Mobile Devices (max-width: 768px) --- */
+@media (max-width: 768px) {
     .space-bg {
-        clip-path: circle(55% at 50% 45%);
-        filter: brightness(0.65);
+        clip-path: circle(40% at 50% 50%); /* Mobile par 40% starting point */
     }
-
+    
     .space-content {
-        padding-bottom: 50px;
+        padding-bottom: 15vh; /* Mobile button ko thoda upar lane ke liye */
     }
 
     .sub-title {
-        font-size: 13px;
+        font-size: 10px;
         letter-spacing: 2px;
     }
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-    .space-item {
-        height: auto;        /* VERY IMPORTANT */
-        min-height: 100vh;
-        justify-content: center;
-        position: relative;
-    }
-
-    .space-bg {
-        position: absolute;
-        clip-path: none;     /* clip-path OFF on mobile */
-        filter: brightness(0.6);
-    }
-
-    .space-content {
-        padding: 120px 20px 80px;
-        opacity: 1;
-        transform: none;
-        background: linear-gradient(
-            to top,
-            rgba(0,0,0,0.75),
-            rgba(0,0,0,0.2)
-        );
-        width: 100%;
-    }
 
     .main-title {
-        font-size: 2.1rem;
-        line-height: 1.2;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
     }
-
+    
     .explore-btn {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
-/* ================= SMALL MOBILE ================= */
+/* --- Small Mobile (max-width: 480px) --- */
 @media (max-width: 480px) {
-    .space-content {
-        padding: 100px 16px 60px;
+    .space-bg {
+        /* Chote phone par image focus zaroori hai */
+        clip-path: circle(45% at 50% 50%); 
     }
-
-    .sub-title {
-        font-size: 12px;
-        letter-spacing: 1.5px;
-    }
-
+    
     .main-title {
         font-size: 1.8rem;
+    }
+
+    .space-content {
+        padding-bottom: 20vh; /* Thoda aur gap taaki thumb reach me ho */
+    }
+}
+
+/* Landscape Mode Fix (Agar phone leta hua ho) */
+@media (max-height: 500px) and (orientation: landscape) {
+    .space-item {
+        height: 150vh; /* Landscape me scroll badhana padega */
+    }
+    .space-content {
+        padding-bottom: 20px;
     }
 }
 
