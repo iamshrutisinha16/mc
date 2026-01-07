@@ -542,7 +542,7 @@ footer a:hover {
     }
 
     .footer-logo img {
-        height: 100px; 
+        height: 130px; 
         margin-bottom: 15px;
     }
 
@@ -577,7 +577,7 @@ footer a:hover {
 
 @media (max-width: 480px) {
     .footer-logo img {
-        height: 80px; 
+        height: 100px; 
     }
 
     .footer-grid {
@@ -1551,7 +1551,7 @@ footer a:hover {
 /* --- Tablet Devices (max-width: 1024px) --- */
 @media (max-width: 1024px) {
     .space-bg {
-        clip-path: circle(35% at 50% 50%); /* Tablet par circle thoda bada */
+        clip-path: circle(35% at 50% 50%); 
     }
     .main-title {
         font-size: 3rem;
@@ -1561,11 +1561,11 @@ footer a:hover {
 /* --- Mobile Devices (max-width: 768px) --- */
 @media (max-width: 768px) {
     .space-bg {
-        clip-path: circle(40% at 50% 50%); /* Mobile par 40% starting point */
+        clip-path: circle(40% at 50% 50%); 
     }
     
     .space-content {
-        padding-bottom: 15vh; /* Mobile button ko thoda upar lane ke liye */
+        padding-bottom: 15vh; 
     }
 
     .sub-title {
@@ -1586,7 +1586,6 @@ footer a:hover {
 /* --- Small Mobile (max-width: 480px) --- */
 @media (max-width: 480px) {
     .space-bg {
-        /* Chote phone par image focus zaroori hai */
         clip-path: circle(45% at 50% 50%); 
     }
     
@@ -1595,14 +1594,13 @@ footer a:hover {
     }
 
     .space-content {
-        padding-bottom: 20vh; /* Thoda aur gap taaki thumb reach me ho */
+        padding-bottom: 20vh; 
     }
 }
 
-/* Landscape Mode Fix (Agar phone leta hua ho) */
 @media (max-height: 500px) and (orientation: landscape) {
     .space-item {
-        height: 150vh; /* Landscape me scroll badhana padega */
+        height: 150vh; 
     }
     .space-content {
         padding-bottom: 20px;
@@ -1728,13 +1726,61 @@ footer a:hover {
     }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero-about { height: 250px; }
-    .hero-about h1 { font-size: 2.2rem; letter-spacing: 2px; }
-    .breadcrumb { padding: 8px 18px; font-size: 0.85rem; }
+@media (max-width: 1024px) {
+    .hero-about {
+        height: 50vh;
+    }
 }
 
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero-about {
+        height: 45vh; 
+        min-height: 350px;
+    }
+
+    .hero-about::before {
+        background-attachment: scroll; 
+    }
+
+    .breadcrumb {
+        padding: 8px 20px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-about {
+        height: 50vh;
+        min-height: 350px;
+    }
+
+    .hero-about h1 {
+        margin-bottom: 15px;
+        line-height: 1.1;
+        font-size: 22px;
+    }
+
+    .breadcrumb {
+        padding: 6px 15px;
+    }
+    
+    .breadcrumb span {
+        margin: 0 6px;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1870,7 +1916,7 @@ footer a:hover {
 .vm-item {
     background: var(--white);
     padding: 60px 45px;
-    border-radius: 0px; /* Square/Rectangular for formal look */
+    border-radius: 0px;
     text-align: center;
     transition: var(--transition);
     position: relative;
@@ -2084,7 +2130,7 @@ input:focus, textarea:focus {
 }
 
 button {
-    background: #C5A021; /* Gold Button */
+    background: #C5A021; 
     color: #ffffff;
     border: none;
     padding: 15px 40px;
@@ -2111,7 +2157,7 @@ button:hover {
     filter: grayscale(10%) contrast(1.1);
 }
 
-/* Social Icons in Card/Footer */
+
 .social-icons a {
     display: inline-block;
     width: 45px;
@@ -2320,7 +2366,7 @@ button:hover {
 
 .gallery-item {
     background: #fff;
-    padding: 10px; /* Frame look */
+    padding: 10px; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     border-radius: 4px;
     overflow: hidden;
@@ -2349,7 +2395,7 @@ button:hover {
 .overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(197, 160, 33, 0.9); /* Gold Overlay */
+    background: rgba(197, 160, 33, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2397,7 +2443,7 @@ button:hover {
 
 .btn-primary {
     display: inline-block;
-    background: #C5A021; /* Gold */
+    background: #C5A021;
     padding: 18px 45px;
     color: #fff;
     text-decoration: none;
@@ -2629,6 +2675,86 @@ button:hover {
     0% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(15px); opacity: 0; }
 }
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .hero-text-box {
+        max-width: 650px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .premium-hero {
+        text-align: center; /* Mobile par content center zyada premium lagta hai */
+    }
+
+    .hero-overlay-gradient {
+        /* Mobile par uniform dark overlay taaki center text dikhe */
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    }
+
+    .hero-content-wrapper {
+        padding: 0 20px;
+    }
+
+    .hero-text-box {
+        margin: 0 auto;
+    }
+
+    .hero-subtext {
+        border-left: none;
+        border-top: 2px solid #c9a24d;
+        padding-left: 0;
+        padding-top: 15px;
+        margin: 0 auto 35px;
+    }
+
+    .hero-action-area {
+        justify-content: center; /* Buttons center mein */
+        gap: 20px;
+    }
+
+    .btn-luxury-main {
+        width: 100%; /* Mobile par full width button better rehta hai */
+        max-width: 300px;
+    }
+
+    .hero-stats {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .scroll-down-indicator {
+        display: none; 
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-main-title {
+        font-size: 1.8rem;
+        letter-spacing: 0;
+    }
+
+    .hero-subtext {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+
+    .btn-luxury-main {
+        padding: 15px 30px;
+        font-size: 12px;
+    }
+
+    .stat-num {
+        font-size: 26px;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .premium-hero { height: 150vh; padding: 50px 0; }
+}
 
 .products-featured-sec {
   padding: 90px 0;
@@ -2840,4 +2966,85 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .hero-text-box {
+        max-width: 650px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .premium-hero {
+        text-align: center; 
+    }
+
+    .hero-overlay-gradient {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    }
+
+    .hero-content-wrapper {
+        padding: 0 20px;
+    }
+
+    .hero-text-box {
+        margin: 0 auto;
+    }
+
+    .hero-subtext {
+        border-left: none;
+        border-top: 2px solid #c9a24d;
+        padding-left: 0;
+        padding-top: 15px;
+        margin: 0 auto 35px;
+    }
+
+    .hero-action-area {
+        justify-content: center; 
+        gap: 20px;
+    }
+
+    .btn-luxury-main {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero-stats {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .scroll-down-indicator {
+        display: none; 
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-main-title {
+        font-size: 1.8rem;
+        letter-spacing: 0;
+    }
+
+    .hero-subtext {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+
+    .btn-luxury-main {
+        padding: 15px 30px;
+        font-size: 12px;
+    }
+
+    .stat-num {
+        font-size: 26px;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .premium-hero { height: 150vh; padding: 50px 0; }
 }
