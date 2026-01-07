@@ -11,38 +11,35 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<header class="main-header">
+    <div class="hamburger" id="nav-toggle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
 
-    <!-- Header -->
-    <header>
-        <!-- Left: Animated Hamburger Icon -->
-        <div class="hamburger" id="nav-toggle">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+    <div class="logo">
+        <img src="assets/img/mclogo.png" alt="Mayure Ceramic">
+    </div>
 
-        <!-- Center: Logo -->
-        <div class="logo">
-            <img src="assets/img/mclogo.png" alt="Mayure Ceramic">
-        </div>
-
-        <!-- Right: Social & Utility Icons -->
-        <div class="header-tools">
+    <div class="header-tools">
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-user"></i>
         </div>
-    </header>
-
+        <i class="fa-solid fa-user"></i>
+    </div>
+</header>
     <!-- Sidebar Drawer (Partial Width) -->
     <aside class="sidebar-drawer" id="sidebar">
         <nav class="side-menu">
             <h3>Explore Mayure Ceramic</h3>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
     
             </ul>
         </nav>
@@ -185,7 +182,7 @@
         <div class="space-bg" style="background-image: url('https://i.pinimg.com/1200x/e5/b6/92/e5b692b735bcce41e721a7f8163c44fa.jpg');"></div>
         <div class="space-content">
             <span class="sub-title">Explore by Space</span>
-            <h2 class="main-title">Marble Living</h2>
+            <h2 class="main-title">Marble Living Spaces</h2>
             <a href="#" class="explore-btn">View Collection</a>
         </div>
     </section>
@@ -247,10 +244,26 @@
                     <p>Everything you need to know about our products and services.</p>
                 </div>
                 <div class="faq-list" data-aos="fade-left">
-                    <div class="faq-item">
-                        <div class="faq-question">Do you offer installation services? <i class="fas fa-plus"></i></div>
-                        <div class="faq-answer"><p>We provide expert guidance and can recommend certified professionals for installation.</p></div>
-                    </div>
+                <div class="faq-item">
+              <div class="faq-question">Do you offer installation services? <i class="fas fa-plus"></i></div>
+                  <div class="faq-answer">
+                    <p>We provide expert guidance and can recommend certified professionals for installation.</p>
+               </div>
+               </div>
+
+                 <div class="faq-item">
+                    <div class="faq-question">What is your return policy? <i class="fas fa-plus"></i></div>
+                     <div class="faq-answer">
+                      <p>We offer a 30-day return policy on most products. Items must be in original condition and packaging.</p>
+                </div>
+                 </div>
+
+                   <div class="faq-item">
+                       <div class="faq-question">Do you ship internationally? <i class="fas fa-plus"></i></div>
+                       <div class="faq-answer">
+                        <p>Yes, we ship to most countries worldwide. Shipping fees and delivery times vary by location.</p>
+                   </div>
+                   </div>
                     <div class="faq-item active">
                         <div class="faq-question">Where is the showroom located? <i class="fas fa-plus"></i></div>
                         <div class="faq-answer"><p>We are located at 319/1. Dungra, Silvassa Road, Vapi, Gujarat.</p></div>
@@ -259,6 +272,29 @@
             </div>
         </div>
     </section>
+    <section class="mc-social-section">
+    <h2>Follow us on <span>Social Media</span></h2>
+
+    <div class="mc-social-grid">
+
+        <a href="https://www.instagram.com/" target="_blank" class="mc-social-card">
+            <img src="assets/img/socialmedia.jpeg" alt="Social Post">
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" class="mc-social-card">
+            <img src="assets/img/socialmedia1.jpeg" alt="Social Post">
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" class="mc-social-card">
+            <img src="assets/img/socialmedia2.jpeg" alt="Social Post">
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" class="mc-social-card">
+            <img src="assets/img/socialmedia3.jpeg" alt="Social Post">
+        </a>
+
+    </div>
+</section>
         <section class="brand-partners">
     <div class="container">
         <!-- Section Title -->
@@ -306,45 +342,26 @@
         </div>
     </div>
 </section>
-        <section class="mc-social-section">
-    <h2>Follow us on Social Media</h2>
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/919512879169"
+   class="wa-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
 
-    <div class="mc-social-grid">
+<!-- Scroll Up -->
+<div class="scroll-up" id="scrollUp">
+    <i class="fa-solid fa-angle-up"></i>
+</div>
 
-        <a href="https://www.instagram.com/" target="_blank" class="mc-social-card">
-            <img src="images/social/post1.jpg" alt="Social Post">
-        </a>
-
-        <a href="https://www.instagram.com/" target="_blank" class="mc-social-card">
-            <img src="images/social/post2.jpg" alt="Social Post">
-        </a>
-
-        <a href="https://www.instagram.com/" target="_blank" class="mc-social-card">
-            <img src="images/social/post3.jpg" alt="Social Post">
-        </a>
-
-        <a href="https://www.instagram.com/" target="_blank" class="mc-social-card">
-            <img src="images/social/post4.jpg" alt="Social Post">
-        </a>
-
-    </div>
-</section>
-    <!-- Floating WhatsApp -->
-    <div class="wa-float">
-        <i class="fa-brands fa-whatsapp"></i>
-    </div>
-
-    <!-- Scroll Up -->
-    <div class="scroll-up">
-        <i class="fa-solid fa-angle-up"></i>
-    </div>
 <!-- Footer -->
     <footer>
         <div class="container footer-grid">
             <div class="footer-col">
                    <div class="footer-logo">
                      <a href="index.html">
-                  <img src="assets/img/footerlogo.png">
+                  <img src="assets/img/mclogo.png">
                       </a>
                   </div>
                 <p>Your One-Stop Destination for Premium Tiles, Bath, Stone, Marble, Granite, and Sanitary Wares!</p>
@@ -359,10 +376,10 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="product.html">Products</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-col">
