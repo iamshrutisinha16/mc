@@ -542,6 +542,13 @@ footer a:hover {
         font-size: 18px;
     }
 
+      .socials a {
+        width: 35px;
+        height: 35px;
+        margin-left: 25px;
+
+    }
+
     .footer-bottom {
         margin-top: 40px;
         padding: 20px 10px;
@@ -568,6 +575,8 @@ footer a:hover {
     .socials a {
         width: 35px;
         height: 35px;
+        margin-left: 25px;
+
     }
 }
 
